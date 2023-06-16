@@ -8,7 +8,6 @@ class BinaryTreeNode {
 
     get height() {
         let leftHeight = this.le ? this.le.height + 1 : 0;
-        let rightHeight = this.ri ? this.ri.height + 1 : 0;
         return Math.max(leftHeight, rightHeight);
     }
 }
